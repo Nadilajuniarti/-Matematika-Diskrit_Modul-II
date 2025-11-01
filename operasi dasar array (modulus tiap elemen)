@@ -1,0 +1,6 @@
+import numpy as np
+x = np.array([0,1,2,3,4])
+# modulus tiap elemen
+y = x % 2
+print(y)
+[0 1 0 1 0]
