@@ -1,0 +1,28 @@
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>>
+>>> def f_linear(x): return 2*x + 3
+...
+>>> def f_kuadrat(x): return x**2 + 2*x + 1
+...
+>>> def f_kubik(x): return x**3 - 3*x**2 + 2
+...
+>>> x = np.linspace(-5, 5, 100)
+>>>
+>>> plt.plot(x, f_linear(x), label="Linear: 2x + 3")
+[<matplotlib.lines.Line2D object at 0x000001A238EA0190>]
+>>> plt.plot(x, f_kuadrat(x), label="Kuadrat: x^2 + 2x + 1")
+[<matplotlib.lines.Line2D object at 0x000001A238EA1BD0>]
+>>> plt.plot(x, f_kubik(x), label="Kubik: x^3 - 3x^2 +2")
+[<matplotlib.lines.Line2D object at 0x000001A238ECC410>]
+>>>
+>>> plt.title("Visualisasi Fungsi Linear, Kuadrat, dan Kubik")
+Text(0.5, 1.0, 'Visualisasi Fungsi Linear, Kuadrat, dan Kubik')
+>>> plt.xlabel("x")
+Text(0.5, 0, 'x')
+>>> plt.ylabel("f(x)")
+Text(0, 0.5, 'f(x)')
+>>> plt.legend()
+<matplotlib.legend.Legend object at 0x000001A237E32270>
+>>> plt.grid(True)
+>>> plt.show()
